@@ -5,16 +5,25 @@ function cadastrar(event) {
 
     event.preventDefault();
 
+    var camposNome = document.querySelector("#nome");
+    var camposPeso= document.querySelector("#peso");
+    var camposAltura = document.querySelector("#altura");
+
+
     var newPaciente = "<tr class='paciente'>"+
-                  "<td class='nomeTd'>Esther</td>"+
-                  "<td class='pesoTd'>3,800</td>"+
-                  "<td class='alturaTd'>0,52</td>"+
+                  "<td class='nomeTd'>"+ camposNome.value  +"</td>"+
+                  "<td class='pesoTd'>"+ camposPeso.value  +"</td>"+
+                  "<td class='alturaTd'>"+ camposAltura.value  +"</td>"+
                   "<td class='imcTd'></td>"+
                   "</tr>"
     ;            
 
     var tabela = document.querySelector("#tabela");
     tabela.innerHTML = tabela.innerHTML + newPaciente;
+    
+    camposNome.value = "";
+    camposPeso.value = "";
+    camposAltura.value = "";
 
     return cadastrar;
 };
