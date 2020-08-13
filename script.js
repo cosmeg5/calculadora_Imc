@@ -30,4 +30,7 @@ function calculaImc() {
     }
 }
 
+var botao = document.getElementById("botao")
+botao.addEventListener("click",  calculaImc);
+
 

@@ -20,7 +20,7 @@
     </div> 
 
     <div class="container">     
-        <table class="tabela" id="tabelaOjt">
+        <table class="tabela" id="tabela">
             <thead>
                 <tr>
                     <th>Nome</th>
@@ -48,22 +48,23 @@
         </table>
     </div>
     <div class="buttonIMC">
-        <button class="botao" onclick="calculaImc()">Calcular IMC</button>
+        <button class="botao" id="botao">Calcular IMC</button>
     </div>
     <div class="title">
         <h1>Insira seus dados</h1>
     </div> 
     <div class="informes">
-        <form action="#" method="post">
+        <form>
             <label>Nome:</label><br>
             <input type="text" id="nome"><br>
             <label>Peso:</label><br>
             <input type="number" id="peso"><br>
             <label>Altura:</label><br>
             <input type="number" id="altura"><br>
-            <button type="submit" value="Enviar" class="botao">Enviar</button>
+            <button type="submit" value="Enviar" class="botao" id="cadastrar">Enviar</button>
         </form>
     </div>
-    <script src="script.js"></script>  
+    <script src="script.js"></script> 
+    <script src="adiciona.js"></script> 
 </body>
 </html>
