@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Básico de javascript</title>
+    <link rel="stylesheet" href="style.css">
+    
+
+</head>
+<body>
+    <header>
+        <div class="textHead">
+            Meus Pacientes
+        </div>
+    </header>
+    
+    <div class="title">
+        <h1>Meus Pacientes</h1>
+    </div> 
+
+    <div class="container">     
+        <table class="tabela" id="tabelaOjt">
+            <thead>
+                <tr>
+                    <th>Nome</th>
+                    <th>Peso</th>
+                    <th>Altura</th>
+                    <th>IMC</th>
+                </tr>
+            </thead>
+
+            <tbody>
+                <tr class="paciente">
+                    <td class="nomeTd">Cosme</td>
+                    <td class="pesoTd">120</td>
+                    <td class="alturaTd">1.77</td>
+                    <td class="imcTd"></td>
+                </tr>
+
+                <tr class="paciente">
+                    <td class="nomeTd">Diana</td>
+                    <td class="pesoTd">77</td>
+                    <td class="alturaTd">1.65</td>
+                    <td class="imcTd"></td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+    <div class="buttonIMC">
+        <button type="submit" value="Enviar" class="botao">Calcular IMC</button>
+    </div>
+    <div class="title">
+        <h1>Insira seus dados</h1>
+    </div> 
+    <div class="informes">
+        <form action="#" method="post">
+            <label>Nome:</label><br>
+            <input type="text" id="nome"><br>
+            <label>Peso:</label><br>
+            <input type="number" id="peso"><br>
+            <label>Altura:</label><br>
+            <input type="number" id="altura"><br>
+            <button type="submit" value="Enviar" class="botao">Enviar</button>
+        </form>
+    </div>
+    <script src="script.js"></script>  
+</body>
+</html>
